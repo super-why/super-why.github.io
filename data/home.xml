@@ -1,6 +1,6 @@
 <section id="HOME" hasSponsorBar="true">
 	<title><![CDATA[SUPER WHY! . HOME | PBS KIDS]]></title>
-	<swf url="/sections/home/home.swf" />
+	<swf url="sections/home/home.swf" />
 	<libraries />
 	
 	<assets>
