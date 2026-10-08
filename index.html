@@ -322,19 +322,12 @@
 			</div>
 			
 			<script type="text/javascript">
-					var params = {
-					quality: "high",
-
-					wmode: "opaque",
-					allowscriptaccess: "always",
-					allownetworking: "external",
-					menu: "false",
-					bgcolor: "#FFFFFF"
-				};
-				var flashvars = { };
-				var attributes = {id:"page_content_swf"};
-				swfobject.embedSWF("/superwhysite_2011.swf", "page_content_inner", "760", "595", "10", "", flashvars, params, attributes);
-			</script>
+					var so = new SWFObject('superwhysite_2011.swf', 'superwhysite', '760', '595', '10', '#FFFFFF');
+					so.addParam('menu', 'false'); 
+					so.addParam('allowScriptAccess', 'always'); 
+                                        PBS_enable_cdn(so);
+					so.write('page_content');
+		    </script>
 			<!-- END PAGE CONTENT -->
 			
 			<!-- BEGIN ADDITIONAL RESOURCES -->
